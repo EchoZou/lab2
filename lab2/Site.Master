@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="lab2.Site" %>
+<%@ Register Src="~/User_controls/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+
+    <title></title>
+    <!-- css section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <bs3:Navbar runat="server"></bs3:Navbar>
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+    <!-- scripts section -->
+    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+
+</body>
+</html>
